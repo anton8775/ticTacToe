@@ -13,6 +13,7 @@
 		D11F0FCB292BBB6A00B55889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11F0FC9292BBB6A00B55889 /* Main.storyboard */; };
 		D11F0FCD292BBB6B00B55889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11F0FCC292BBB6B00B55889 /* Assets.xcassets */; };
 		D11F0FD0292BBB6B00B55889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11F0FCE292BBB6B00B55889 /* LaunchScreen.storyboard */; };
+		D11F0FD8292BED6500B55889 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F0FD7292BED6500B55889 /* ChooseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D11F0FCC292BBB6B00B55889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11F0FCF292BBB6B00B55889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D11F0FD1292BBB6B00B55889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D11F0FD7292BED6500B55889 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D11F0FC3292BBB6A00B55889 /* AppDelegate.swift */,
 				D11F0FC5292BBB6A00B55889 /* SceneDelegate.swift */,
 				D11F0FC7292BBB6A00B55889 /* ViewController.swift */,
+				D11F0FD7292BED6500B55889 /* ChooseViewController.swift */,
 				D11F0FC9292BBB6A00B55889 /* Main.storyboard */,
 				D11F0FCC292BBB6B00B55889 /* Assets.xcassets */,
 				D11F0FCE292BBB6B00B55889 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11F0FC8292BBB6A00B55889 /* ViewController.swift in Sources */,
+				D11F0FD8292BED6500B55889 /* ChooseViewController.swift in Sources */,
 				D11F0FC4292BBB6A00B55889 /* AppDelegate.swift in Sources */,
 				D11F0FC6292BBB6A00B55889 /* SceneDelegate.swift in Sources */,
 			);

@@ -9,22 +9,47 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isUserX = true
+    var userSymbol = ""
+    var computerSymbol = ""
+    
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet var boardButtons: [UIButton]!
+    @IBOutlet var boardButtons: [Any]!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    
+    var boardStatusArray = [[String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        boardButtons = [
+        "", "", "",
+        "", "", "",
+        "", "", ""]
+        
+        if !isUserX{
+            titleLabel.text = "Computer turn"
+            userSymbol = "O"
+            computerSymbol = "X"
+            computerTurn()
+        } else {
+            titleLabel.text = "Your turn"
+            userSymbol = "X"
+            computerSymbol = "O"
+        }
     }
 
-    @IBAction func onStratButtonTouch(_ sender: UIButton) {
-        titleLabel.text = "Your turn"
-        startButton.isEnabled = false
-    }
     @IBAction func onBoardButtonTouch(_ sender: UIButton) {
-        sender.setTitle("X", for: .normal)
+        subtitleLabel.text = ""
+        if sender.titleLabel?.text != userSymbol && sender.titleLabel?.text != computerSymbol {
+                    sender.setTitle(userSymbol, for: .normal)
+                } else {
+                    subtitleLabel.text = "this cell is not empty"
+                }
     }
     
+    func computerTurn(){
+        
+    }
 }
 
